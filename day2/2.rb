@@ -4,11 +4,12 @@ d_x = 0
 d_y = 0 
 
 data.each do |dir, n| 
+    #puts n
     case dir 
-        when 'forword' d_x += n.to_i
-        when 'up' d_y  += n.to_i 
-        when 'down' d_y -= n.to_i 
-        else raise 'I do not no where to go' 
+        when 'forward' then d_x += n.to_i
+        when 'up'  then d_y -= n.to_i 
+        when 'down' then d_y += n.to_i 
+        else raise " I do not no where to go"
     end  
 end 
 
