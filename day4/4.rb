@@ -55,3 +55,6 @@ end
 puts find_winning_score!(bingo_numbers, boards)
 
 # Part 2
+
+(boards.length - 2).times { find_winning_score!(bingo_numbers, boards) }
+puts find_winning_score!(bingo_numbers, boards)
