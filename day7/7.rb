@@ -13,6 +13,20 @@ def part1(crabs)
     return fuel_sum
 end
 
+
+
+def part2(crabs)
+    fuel_sums = []
+    for i in 0..crabs.max do
+      sum = 0
+      crabs.each do |c|
+        sum += (1..(c - i).abs).sum
+      end
+      fuel_sums.push(sum)
+    end
+    return fuel_sums.min
+end
+
 puts part1(input)
 puts part2(input)
 
