@@ -42,4 +42,4 @@ puts grid.flatten.count { |n| n > 1 }
 
 # Part 2
 grid = fill_grid(lines, 1000)
-puts grid.flatten.count { |n| n > 1 }
+puts grid.flatten.count { |n| n > 1 }               
